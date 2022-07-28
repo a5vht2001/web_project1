@@ -1,0 +1,260 @@
+:root {
+    --white-color : #fff;
+    --black-color : #000;
+    --text-color : #9A9A9A;
+    --primary-color : ;
+
+    --header-height : 69px
+    --slider-height : 503px
+}
+
+html {
+    /* 1 rem = 10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
+
+body {
+    margin : 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+label {
+    margin: 0;
+}
+
+/* a:hover {
+    color: currentColor;
+    text-decoration: none;
+} */
+
+.hide-on-pc {
+    display: none;
+}
+
+.ul-show-on-mobile {
+    display: none;
+}
+
+.sold-out {
+    position: relative;
+    opacity: 0.5;
+}
+
+.sold-out::after {
+    content: "Tạm hết hàng";
+    position: absolute;
+    color: red;
+    width: 100px;
+    height: 100px;
+    top: 0%;
+    left: 0%;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #E7E7E7 !important;
+}
+
+.border-top {
+    border-top: 1px solid #282828 !important;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.ptb-16 {
+    padding: 16px 0px;
+}
+
+.pb-30 {
+    padding-bottom: 30px
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.pb-60 {
+    padding-bottom: 60px
+}
+
+/* Email Register */
+.email-register {
+    background-color: #E7E7E7;
+    padding: 24px 0;
+}
+
+.email-register__heading {
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-family: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.email-register__description {
+    font-size: 1.4rem;
+}
+
+.email-register__form {
+    display: flex;
+    align-items: center;
+}
+
+.email-register__input {
+    background-color: var(--white-color);
+    padding: 10px 14px;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #101010;
+}
+
+.email-register__input::placeholder {
+    color: #A1A1A1;
+    font-size: 1.4rem;
+}
+
+.email-register__button {
+    color: var(--white-color);
+    background-color: #101010;
+    font-size: 1.4rem;
+    min-width: 132px;
+    height: 40px;
+    padding: 6px 28px;
+    border: 1px solid #101010;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-duration: 200ms;
+}
+
+.email-register__button:hover {
+    background-color: #585858;
+    border: 1px solid #585858;
+}
+/* Pagination */
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    float: right;
+}
+
+.pagination-item {
+    margin: 0 4px;
+}
+
+.pagination-item--active .pagination-item__link {
+    border: 1px solid #101010;
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    background-color: #D2AF66;
+    color: #101010;
+    text-decoration: none;
+}
+
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #101010;
+    min-width: 30px;
+    height: var(--height);
+    text-align: center;
+    line-height: var(--height);
+    border: 1px solid #CFCFCF;
+    padding: 0 6px;
+}
+
+.pagination-item__link:hover {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.pagination-item__link-no-pointer {
+    cursor: default;
+}
+
+.pagination-item__icon {
+    color: #CFCFCF;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+

@@ -1,0 +1,37 @@
+@media (max-width: 991px) {
+    .product__menu {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .product__sort-text {
+        display: none;
+    }
+
+    .product__select {
+        width: 100%;
+    }
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .filter-search {
+        display: block;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .filter-search__button {
+        font-size: 1.3rem;
+        padding: 8px 6px;
+    }
+    
+}
